@@ -1,6 +1,7 @@
 package com.automation.init;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -382,17 +383,20 @@ else if (targetBrowser.contains("browserstack")) {
 	
 	
 	@AfterSuite()
-	public void zipfileupdate() {
+	public void zipfileupdate() throws IOException {
 		System.out.println("Calling ZipFile for the Extent Report.........");
 		//for the Extent Report Zip 
-		String dataFilePath = "test-output/Extent_Report_new.html";
+		String dataFilePath = "test-output/report&screenshots/Extent_Report_new.html";
 		File datafile = new File(dataFilePath);
 		String INPUT_FILE = datafile.getAbsolutePath();
-		String dataFilePath1 = "test-output/Extent_Report_new.zip";
+		String dataFilePath1 = "test-output/report&screenshots/Extent_Report_new.zip";
 		File datafile1 = new File(dataFilePath1);
 		String OUTPUT_FILE = datafile1.getAbsolutePath();
-	    RentCount_Common.zipFile(new File(INPUT_FILE), OUTPUT_FILE);
+	    RentCount_Common.zipFile(new File(INPUT_FILE), OUTPUT_FILE); //This function Zip the single file
 	    //End for the Extent Report Zip use 
+	    
+	    
+	    RentCount_Common.zipdirectory();//This function Zip the Directory/Folder
 	}
 
 	/**

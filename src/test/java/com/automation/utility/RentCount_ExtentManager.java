@@ -8,7 +8,7 @@ public class RentCount_ExtentManager {
     public synchronized static ExtentReports getReporter(){
         if(extent == null){
             //Set HTML reporting file location
-            extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/Extent_Report_new.html", true);
+            extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/report&screenshots/Extent_Report_new.html", true);
         }
         return extent;
     }
