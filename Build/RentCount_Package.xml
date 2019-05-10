@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RentCount_Functional_TestCases_Suite" verbose="10" parallel="tests"
+	thread-count="1">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4444" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
+		chrome 3) IExplorer : ie8 / ie9 -->
+	<parameter name="selenium.browser" value="chrome" />
+	<!-- <parameter name="selenium.browser" value="chrome" /> -->
+	<!-- <parameter name="selenium.browser" value="m-headless" /> -->
+	<!-- <parameter name="selenium.browser" value="firefox" /> -->
+	<!-- <parameter name="selenium.browser" value="ie11" /> -->
+	<!-- <parameter name="selenium.browser" value="Android_Chrome" /> -->
+	<!-- <parameter name="selenium.browser" value="ie11" /> -->
+	<!-- <parameter name="selenium.browser" value="browserstack" /> -->
+	<parameter name="selenium.url"
+		value="https://staging.3dbroadcastsales.com/" />
+
+	<listeners>
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterListener" />
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterEmailBuildSummary" />
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterforEmail" />
+
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterBuildSummary" />
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterTestpassDetails" />
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterTestFailureDetails" />
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterTestskipDetails" />
+		<listener
+			class-name="com.automation.utility.RentCount_CustomReporterTestDetails" />
+
+	<listener class-name="com.automation.utility.RentCount_TestListener" />
+	<!-- <listener class-name="com.automation.utility.RentCount_AnnotationTransformer" /> -->
+	
+	<!-- <listener class-name="com.automation.utility.RentCount_RetryListenerClass" /> -->  <!-- for the Retry Class to run the fail test 2 times -->
+	
+	
+	
+	
+			
+	</listeners>
+
+	<!-- <test name="TC_SignUp_01: Verify User SignUp functionality">
+		<classes>
+			<class name="com.automation.index.PackageIndex">
+				<methods>
+					<include name="TC_SignUp_01" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+
+	<test name="TC_LogIn_02: Verify User LogIn functionality">
+		<classes>
+			<class name="com.automation.index.RentCount_PackageIndex">
+				<methods>
+					<include name="TC_LogIn_02" value = "Verify User LogIn functionality"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- <test name="TC_Menu_Page_03: Verify Any Menu page Functionalities">
+		<classes>
+			<class name="com.automation.index.PackageIndex">
+				<methods>
+					<include name="TC_Menu_Page_03" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	 -->
+	<!-- <test name="TC_Wish_Compare_04: Verify User is able to add the Products into Wish List and Compare List">
+		<classes>
+			<class name="com.automation.index.PackageIndex">
+				<methods>
+					<include name="TC_Wish_Compare_04" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+</suite>
+ 

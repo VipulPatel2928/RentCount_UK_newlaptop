@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [RentCount_Functional_TestCases_Suite]" parallel="tests">
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <parameter name="selenium.browser" value="chrome"/>
+  <parameter name="selenium.url" value="https://staging.3dbroadcastsales.com/"/>
+  <listeners>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterListener"/>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterEmailBuildSummary"/>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterforEmail"/>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterBuildSummary"/>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterTestpassDetails"/>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterTestFailureDetails"/>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterTestskipDetails"/>
+    <listener class-name="com.automation.utility.RentCount_CustomReporterTestDetails"/>
+    <listener class-name="com.automation.utility.RentCount_TestListener"/>
+  </listeners>
+  <test thread-count="1" verbose="0" name="TC_LogIn_02: Verify User LogIn functionality(failed)" parallel="tests">
+    <classes>
+      <class name="com.automation.index.RentCount_PackageIndex">
+        <methods>
+          <include name="sheetupdate"/>
+          <include name="tearDown"/>
+          <include name="zipfileupdate"/>
+          <include name="TC_LogIn_02"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.automation.index.RentCount_PackageIndex -->
+    </classes>
+  </test> <!-- TC_LogIn_02: Verify User LogIn functionality(failed) -->
+</suite> <!-- Failed suite [RentCount_Functional_TestCases_Suite] -->
