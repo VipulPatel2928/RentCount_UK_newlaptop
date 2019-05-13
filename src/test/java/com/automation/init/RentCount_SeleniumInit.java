@@ -386,10 +386,10 @@ else if (targetBrowser.contains("browserstack")) {
 	public void zipfileupdate() throws IOException {
 		System.out.println("Calling ZipFile for the Extent Report.........");
 		//for the Extent Report Zip 
-		String dataFilePath = "test-output/report&screenshots/Extent_Report_new.html";
+		String dataFilePath = "test-output/screenshots/Extent_Report_new.html";
 		File datafile = new File(dataFilePath);
 		String INPUT_FILE = datafile.getAbsolutePath();
-		String dataFilePath1 = "test-output/report&screenshots/Extent_Report_new.zip";
+		String dataFilePath1 = "test-output/screenshots/Extent_Report_new.zip";
 		File datafile1 = new File(dataFilePath1);
 		String OUTPUT_FILE = datafile1.getAbsolutePath();
 	    RentCount_Common.zipFile(new File(INPUT_FILE), OUTPUT_FILE); //This function Zip the single file

@@ -128,7 +128,7 @@ public class RentCount_Common {
 	//C:\Users\User\eclipse-workspace\RentCount_UK\test-output\screenshots
 	
 public static void zipdirectory() throws IOException {
-	File directoryToZip = new File("C:\\Users\\User\\eclipse-workspace\\RentCount_UK\\test-output\\report&screenshots");
+	File directoryToZip = new File("C:\\Users\\User\\eclipse-workspace\\RentCount_UK\\test-output\\screenshots");
 
 	List<File> fileList = new ArrayList<File>();
 	System.out.println("---Getting references to all files in: " + directoryToZip.getCanonicalPath());
@@ -158,7 +158,7 @@ public static void getAllFiles(File dir, List<File> fileList) {
 public static void writeZipFile(File directoryToZip, List<File> fileList) {
 
 	try {
-		FileOutputStream fos = new FileOutputStream(directoryToZip.getName() + ".zip");
+		FileOutputStream fos = new FileOutputStream("Report&"+directoryToZip.getName() + ".zip");
 		ZipOutputStream zos = new ZipOutputStream(fos);
 
 		for (File file : fileList) {
@@ -420,7 +420,7 @@ public static void addToZip(File directoryToZip, File file, ZipOutputStream zos)
 			
 			
 			//    E:/Project/eSign/test-output/Screenshot
-			String reportFolder = "C:/Users/User/eclipse-workspace/RentCount_UK/test-output/report&screenshots" + File.separator;
+			String reportFolder = "C:/Users/User/eclipse-workspace/RentCount_UK/test-output" + File.separator;
 			String screenshotsFolder = "screenshots";
 			File screenshotFolder = new File(reportFolder + screenshotsFolder);
 			if (!screenshotFolder.getAbsoluteFile().exists()) {
