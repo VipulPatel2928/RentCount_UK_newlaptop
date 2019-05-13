@@ -50,7 +50,7 @@
       <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<br><Strong><font color=#FF0000>--Failed</font></strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<a href='screenshots/0510164828190TC_LogIn_02.png' target='_new'>0510164828190TC_LogIn_02.png</a></br>]]>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<a href='screenshots/0513120942517TC_LogIn_02.png' target='_new'>0513120942517TC_LogIn_02.png</a></br>]]>
     </line>
     <line>
       <![CDATA[<br></br><h3>Failure Reason:</h3>]]>
@@ -62,27 +62,27 @@
       <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<hr size='15px' noshade color='red'></br>]]>
     </line>
   </reporter-output>
-  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="162256" started-at="2019-05-10T15:45:47Z" finished-at="2019-05-10T15:48:29Z">
+  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="170171" started-at="2019-05-13T11:06:55Z" finished-at="2019-05-13T11:09:46Z">
     <groups>
     </groups>
-    <test name="TC_LogIn_02: Verify User LogIn functionality" duration-ms="162256" started-at="2019-05-10T15:45:47Z" finished-at="2019-05-10T15:48:29Z">
+    <test name="TC_LogIn_02: Verify User LogIn functionality" duration-ms="170171" started-at="2019-05-13T11:06:55Z" finished-at="2019-05-13T11:09:46Z">
       <class name="com.automation.index.RentCount_PackageIndex">
-        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="sheetupdate" is-config="true" duration-ms="10681" started-at="2019-05-10T15:45:36Z" finished-at="2019-05-10T15:45:47Z">
+        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="sheetupdate" is-config="true" duration-ms="10842" started-at="2019-05-13T11:06:45Z" finished-at="2019-05-13T11:06:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sheetupdate -->
-        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="fetchSuiteConfiguration" is-config="true" duration-ms="9" started-at="2019-05-10T15:45:47Z" finished-at="2019-05-10T15:45:47Z">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="fetchSuiteConfiguration" is-config="true" duration-ms="53" started-at="2019-05-13T11:06:55Z" finished-at="2019-05-13T11:06:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1d9af731]]>
+                <![CDATA[org.testng.TestRunner@16f34376]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchSuiteConfiguration -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="setUp" is-config="true" duration-ms="17673" started-at="2019-05-10T15:45:47Z" finished-at="2019-05-10T15:46:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="setUp" is-config="true" duration-ms="23737" started-at="2019-05-13T11:06:55Z" finished-at="2019-05-13T11:07:19Z">
           <params>
             <param index="0">
               <value>
@@ -91,14 +91,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@1d9af731]]>
+                <![CDATA[org.testng.TestRunner@16f34376]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="TC_LogIn_02()[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="TC_LogIn_02" duration-ms="142800" started-at="2019-05-10T15:46:04Z" finished-at="2019-05-10T15:48:27Z">
+        <test-method status="FAIL" signature="TC_LogIn_02()[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="TC_LogIn_02" duration-ms="142253" started-at="2019-05-13T11:07:19Z" finished-at="2019-05-13T11:09:41Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Account Information')]"}
@@ -109,8 +109,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-GJ9SRJ9', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52703}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: ffea2b0c7d4c611550eb05c1b13a5850
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50657}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 3017370266a252d2480cdf84ebcc0b82
 *** Element info: {Using=xpath, value=//a[contains(text(),'Account Information')]}]]>
             </message>
             <full-stacktrace>
@@ -122,8 +122,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-GJ9SRJ9', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52703}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: ffea2b0c7d4c611550eb05c1b13a5850
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50657}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 3017370266a252d2480cdf84ebcc0b82
 *** Element info: {Using=xpath, value=//a[contains(text(),'Account Information')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -216,7 +216,7 @@ at java.lang.Thread.run(Unknown Source)
               <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<br><Strong><font color=#FF0000>--Failed</font></strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<a href='screenshots/0510164828190TC_LogIn_02.png' target='_new'>0510164828190TC_LogIn_02.png</a></br>]]>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<a href='screenshots/0513120942517TC_LogIn_02.png' target='_new'>0513120942517TC_LogIn_02.png</a></br>]]>
             </line>
             <line>
               <![CDATA[<br></br><h3>Failure Reason:</h3>]]>
@@ -229,7 +229,7 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- TC_LogIn_02 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="tearDown" is-config="true" duration-ms="1082" started-at="2019-05-10T15:48:28Z" finished-at="2019-05-10T15:48:29Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="tearDown" is-config="true" duration-ms="3542" started-at="2019-05-13T11:09:42Z" finished-at="2019-05-13T11:09:46Z">
           <params>
             <param index="0">
               <value>
@@ -240,7 +240,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="zipfileupdate" is-config="true" duration-ms="117" started-at="2019-05-10T15:48:29Z" finished-at="2019-05-10T15:48:29Z">
+        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@7fac631b]" name="zipfileupdate" is-config="true" duration-ms="97" started-at="2019-05-13T11:09:46Z" finished-at="2019-05-13T11:09:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- zipfileupdate -->
