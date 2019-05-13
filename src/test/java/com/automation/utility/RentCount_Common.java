@@ -420,7 +420,7 @@ public static void addToZip(File directoryToZip, File file, ZipOutputStream zos)
 			
 			
 			//    E:/Project/eSign/test-output/Screenshot
-			String reportFolder = "C:/Users/User/eclipse-workspace/RentCount_UK/test-output" + File.separator;
+			String reportFolder = "C:/Users/User/eclipse-workspace/RentCount_UK/test-output/report&screenshots" + File.separator;
 			String screenshotsFolder = "screenshots";
 			File screenshotFolder = new File(reportFolder + screenshotsFolder);
 			if (!screenshotFolder.getAbsoluteFile().exists()) {
