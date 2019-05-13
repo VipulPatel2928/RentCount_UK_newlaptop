@@ -37,7 +37,7 @@ import org.testng.xml.XmlSuite;
 import com.automation.init.RentCount_SeleniumInit;
 
 public class RentCount_CustomReporterforEmail extends RentCount_CustomReporterListener {
-
+    public static String browsername;
 	private static final Logger L = Logger
 			.getLogger(RentCount_CustomReporterListener.class);
 
@@ -477,7 +477,7 @@ public class RentCount_CustomReporterforEmail extends RentCount_CustomReporterLi
 		//m_out.println("<tr><td colspan='4'>To view Full Report : <a href=\"http://localhost:8080/job/Videogram/HTML_Report/\">http://localhost:8080/job/Videogram_Chrome/HTML_Report</a></td></tr>");
 		m_out.println("<tr><td colspan='4'>Overall test suite completion : <b>"
 				+ Time + " minutes</b><br/> Date and Time of Run: <b>"
-				+ sdf.format(date) + "</b><br/> Browser : <b>"+RentCount_SeleniumInit.browserName+"<t></t>"
+				+ sdf.format(date) + "</b><br/> Browser : <b>"+browsername+"<t></t>"
 				+ com.automation.init.RentCount_SeleniumInit.browserVersion +  "</b><br/>OS: <b>"
 				+ System.getProperty("os.name") + "</b></td></tr>");
 		m_out.println("<tr bgcolor='SkyBlue'><th>Test Cases</th>"

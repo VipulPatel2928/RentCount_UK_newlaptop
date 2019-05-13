@@ -37,10 +37,12 @@ import com.automation.indexpage.RentCount_PackageIndexpage;
 //import com.automation.indexpage.PackageIndexpage_demo;
 //import com.automation.indexpage.PackageIndexpage_mobile;
 import com.automation.utility.RentCount_Common;
+import com.automation.utility.RentCount_CustomReporterBuildSummary;
+import com.automation.utility.RentCount_CustomReporterforEmail;
 import com.automation.utility.RentCount_TestData;
 import com.automation.verification.RentCount_PackageVerification;
 import com.aventstack.extentreports.ExtentReports;
-
+import com.automation.utility.RentCount_ExtentManager;
 public class RentCount_SeleniumInit extends RentCount_ExtentManager {
 
 	String testUrl;
@@ -57,7 +59,7 @@ public class RentCount_SeleniumInit extends RentCount_ExtentManager {
 	protected static String screenshot_folder_path = null;
 	public static String currentTest;
 
-	public static String browserName = "";
+	public static String browserName = "Default Chrome";
 	public static String osName = "";
 	public static String browserVersion = "";
 	public static String TestCaseName = "";
@@ -88,6 +90,10 @@ public class RentCount_SeleniumInit extends RentCount_ExtentManager {
 		seleniumHubPort = testContext.getCurrentXmlTest().getParameter("selenium.port");
 		targetBrowser = testContext.getCurrentXmlTest().getParameter("selenium.browser");
 		browserName = testContext.getCurrentXmlTest().getParameter("selenium.browser");
+		RentCount_CustomReporterBuildSummary.browsername=browserName;
+		RentCount_CustomReporterforEmail.browsername=browserName;
+		RentCount_ExtentManager.browsername=browserName;
+		System.out.println("Browser Name:"+browserName);
 		System.out.println(" Before Test ");
 	}
 

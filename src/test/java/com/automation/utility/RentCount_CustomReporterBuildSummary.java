@@ -40,7 +40,7 @@ import com.automation.init.RentCount_SeleniumInit;
 
 
 public class RentCount_CustomReporterBuildSummary extends RentCount_CustomReporterListener {
-
+    public static String browsername;
 	private static final Logger L = Logger
 			.getLogger(RentCount_CustomReporterListener.class);
 
@@ -620,6 +620,8 @@ public class RentCount_CustomReporterBuildSummary extends RentCount_CustomReport
 		tableStart(style, "summary");
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm a z,MM/dd/yyyy");
+		
+		System.out.println("In CustomReportBuildSummary Browser Name:"+browsername);
 
 		m_out.println("<tr><td bgcolor='white' colspan='4'> <table border='0' width='100%' bgcolor='#e6f7ff'><tr>"
 				+ "<td  width='25%'  bgcolor='white'>"
@@ -632,7 +634,7 @@ public class RentCount_CustomReporterBuildSummary extends RentCount_CustomReport
 		//m_out.println("<tr><td colspan='4'>To view Full Report : <a href=\"http://localhost:8080/job/Videogram/HTML_Report/\">http://localhost:8080/job/Videogram_Chrome/HTML_Report</a></td></tr>");
 		m_out.println("<tr><td colspan='4'>Overall test suite completion : <b>"
 				+ Time + " minutes</b><br/> Date and Time of Run: <b>"
-				+ sdf.format(date) + "</b><br/> Browser : <b> "+RentCount_SeleniumInit.browserName+"<t></t> </b><br/>OS: <b>"
+				+ sdf.format(date) + "</b><br/> Browser : <b> "+ browsername +"<t></t> </b><br/>OS: <b>"
 				+ System.getProperty("os.name") + "</b></td></tr>");
 	/*	m_out.println("<tr bgcolor='SkyBlue'><th>Test Cases</th><th>Steps</th>"
 				+ "<th>Failure Reason</th><th>Total Time<br/>(sec.)</th>");*/
