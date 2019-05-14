@@ -2,8 +2,10 @@ package com.automation.utility;
 
 import java.awt.List;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -42,7 +44,48 @@ public class ReadyToUse_Functions {
 		element.sendKeys(data);
 	}
 
+	//Function Write data into Text File
+	/*Write data into the AccountInfo text file Start
+			String fileName = "lib/AccountInfo.txt";
+			String[] data = { firstname, lastname, emailaddress };
+			ReadyToUse_Functions.writedataintofile(fileName, data);*/	
+	public static void writedataintofile(String filename,String[] data) {
+		// TODO Auto-generated method stub
+		// The name of the file to open.
+	    String fileName = filename;
+	    try {
+	        // Assume default encoding.
+	        FileWriter fileWriter =
+	            new FileWriter(fileName);
+
+	        // Always wrap FileWriter in BufferedWriter.
+	        BufferedWriter bufferedWriter =
+	            new BufferedWriter(fileWriter);
+
+	        // Note that write() does not automatically
+	        // append a newline character.
+	        for(int i =0;i<data.length;i++){
+	        bufferedWriter.write(data[i]);
+	        bufferedWriter.newLine();
+	        }
+	       // bufferedWriter.write("");
+	        // Always close files.
+	        bufferedWriter.close();
+	    }
+	    catch(IOException ex) {
+	        System.out.println(
+	            "Error writing to file '"
+	            + fileName + "'");
+	        // Or we could just do this:
+	        // ex.printStackTrace();
+	    }
+	}
+	
 	// Function Read data from the Text File
+	// You can call the ReadTextFile method using below steps
+	/*String fileName = "lib/LoginDetails.txt";
+	ArrayList<String> data;
+	data = ReadyToUse_Functions.ReadTextFile(fileName, 2);	*/	
 	public static ArrayList<String> ReadTextFile(String filename, int nooflines) {
 		String fileName = filename;
 		// This will reference one line at a time
