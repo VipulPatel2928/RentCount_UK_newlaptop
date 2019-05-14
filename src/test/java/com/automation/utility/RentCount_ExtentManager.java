@@ -11,6 +11,8 @@ public class RentCount_ExtentManager {
             extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/screenshots/Extent_Report_new.html", true);
             extent.addSystemInfo("Host Name", "Vipul");
             extent.addSystemInfo("Browser Name", browsername);
+            extent.addSystemInfo("Prepared For:", "RentCount LTD");
+            extent.addSystemInfo("Prepared By:", "Infovinity LTD");
         }
         return extent;
     }

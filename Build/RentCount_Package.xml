@@ -66,7 +66,7 @@
 		<classes>
 			<class name="com.automation.index.RentCount_PackageIndex">
 				<methods>
-					<include name="TC_LogIn_02" value = "Verify User LogIn functionality"/>
+					<include name="yahoomail_login" value = "Verify User LogIn functionality"/>
 				</methods>
 			</class>
 		</classes>

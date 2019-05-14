@@ -52,7 +52,7 @@ public class RentCount_SeleniumInit extends RentCount_ExtentManager {
 	public String suiteName = "";
 	public String testName = "";
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public WebDriver driver1; // Mobile IMPL
 			
 	protected static String test_data_folder_path = null;
@@ -79,7 +79,7 @@ public class RentCount_SeleniumInit extends RentCount_ExtentManager {
 	@BeforeSuite()
 	public void sheetupdate() {
 		System.out.println("Excel Sheet Updated for the Latest Result.........");
-		RentCount_TestData.getnumberofrow();  
+		//RentCount_TestData.getnumberofrow();  this function has inside function to update the Excel Sheet
 	}
 	
 	@BeforeTest(alwaysRun = true)
