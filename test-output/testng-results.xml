@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong>]]>
@@ -32,27 +32,27 @@
       <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
     </line>
   </reporter-output>
-  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="154011" started-at="2019-05-14T16:03:00Z" finished-at="2019-05-14T16:05:34Z">
+  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="102683" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:13:36Z">
     <groups>
     </groups>
-    <test name="TC_LogIn_02: Verify User LogIn functionality" duration-ms="154011" started-at="2019-05-14T16:03:00Z" finished-at="2019-05-14T16:05:34Z">
+    <test name="TC_LogIn_02: Verify User LogIn functionality" duration-ms="102683" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:13:36Z">
       <class name="com.automation.index.RentCount_PackageIndex">
-        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="sheetupdate" is-config="true" duration-ms="6" started-at="2019-05-14T16:03:00Z" finished-at="2019-05-14T16:03:00Z">
+        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="sheetupdate" is-config="true" duration-ms="7" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:11:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sheetupdate -->
-        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="fetchSuiteConfiguration" is-config="true" duration-ms="6" started-at="2019-05-14T16:03:00Z" finished-at="2019-05-14T16:03:00Z">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="fetchSuiteConfiguration" is-config="true" duration-ms="6" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:11:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@51e2adc7]]>
+                <![CDATA[org.testng.TestRunner@6f195bc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchSuiteConfiguration -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="setUp" is-config="true" duration-ms="37381" started-at="2019-05-14T16:03:00Z" finished-at="2019-05-14T16:03:37Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="setUp" is-config="true" duration-ms="6638" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:12:00Z">
           <params>
             <param index="0">
               <value>
@@ -61,14 +61,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@51e2adc7]]>
+                <![CDATA[org.testng.TestRunner@6f195bc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="yahoomail_login()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="yahoomail_login" duration-ms="105630" started-at="2019-05-14T16:03:37Z" finished-at="2019-05-14T16:05:23Z">
+        <test-method status="PASS" signature="yahoomail_login()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="yahoomail_login" duration-ms="85160" started-at="2019-05-15T12:12:00Z" finished-at="2019-05-15T12:13:25Z">
           <reporter-output>
             <line>
               <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong>]]>
@@ -102,7 +102,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- yahoomail_login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="tearDown" is-config="true" duration-ms="10979" started-at="2019-05-14T16:05:23Z" finished-at="2019-05-14T16:05:34Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="tearDown" is-config="true" duration-ms="10866" started-at="2019-05-15T12:13:25Z" finished-at="2019-05-15T12:13:36Z">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="zipfileupdate" is-config="true" duration-ms="19" started-at="2019-05-14T16:05:34Z" finished-at="2019-05-14T16:05:34Z">
+        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="zipfileupdate" is-config="true" duration-ms="86" started-at="2019-05-15T12:13:36Z" finished-at="2019-05-15T12:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- zipfileupdate -->

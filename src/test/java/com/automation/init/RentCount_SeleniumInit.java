@@ -400,7 +400,16 @@ else if (targetBrowser.contains("browserstack")) {
 		String OUTPUT_FILE = datafile1.getAbsolutePath();
 	    RentCount_Common.zipFile(new File(INPUT_FILE), OUTPUT_FILE); //This function Zip the single file
 	    //End for the Extent Report Zip use 
+	    //C:\Users\User\eclipse-workspace\RentCount_UK\Resources\[3DBroadCastSales]-Script_Result.xlsx
 	    
+	    
+	    String dataFilePath_xlsx = "Resources/[3DBroadCastSales]-Script_Result.xlsx";
+		File datafile_xlsx = new File(dataFilePath_xlsx);
+		String INPUT_FILE_xlsx = datafile_xlsx.getAbsolutePath();
+		String dataFilePath_xlsx1 = "RentCount_UK/[3DBroadCastSales]-Script_Result.zip";
+		File datafile_xlsx1 = new File(dataFilePath_xlsx1);
+		String OUTPUT_FILE_xlsx = datafile_xlsx1.getAbsolutePath();
+	    RentCount_Common.zipFile(new File(INPUT_FILE_xlsx), OUTPUT_FILE_xlsx); //This function Zip the single file
 	    
 	    RentCount_Common.zipdirectory();//This function Zip the Directory/Folder
 	}
