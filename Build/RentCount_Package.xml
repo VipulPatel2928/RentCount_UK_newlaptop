@@ -51,18 +51,18 @@
 			
 	</listeners>
 
-	<!-- <test name="TC_SignUp_01: Verify User SignUp functionality">
+	<test name="Practice_Automation_Form:: Simple form with different Functionalities">
 		<classes>
-			<class name="com.automation.index.PackageIndex">
+			<class name="com.automation.index.RentCount_PackageIndex">
 				<methods>
-					<include name="TC_SignUp_01" />
+					<include name="Practice_Automation_Form" />
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 
 
-	<test name="TC_LogIn_02: Verify User LogIn functionality">
+	<!-- <test name="TC_LogIn_02: Verify User LogIn functionality">
 		<classes>
 			<class name="com.automation.index.RentCount_PackageIndex">
 				<methods>
@@ -70,7 +70,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->
 	
 	<!-- <test name="TC_Menu_Page_03: Verify Any Menu page Functionalities">
 		<classes>

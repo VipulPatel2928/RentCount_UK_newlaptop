@@ -22,6 +22,7 @@ import com.automation.indexpage.RentCount_PackageIndexpage;
 import com.automation.init.RentCount_AbstractPage;
 import com.automation.utility.LogClass;
 import com.automation.utility.RentCount_Common;
+import com.automation.utility.funcs;
 import com.relevantcodes.extentreports.LogStatus;
 //import com.init.Common;
 
@@ -34,7 +35,7 @@ public class RentCount_PackageVerification extends RentCount_AbstractPage {
 
 	public boolean homepageverify() {
 		// TODO Auto-generated method stub
-		String urlpass = "https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
+		String urlpass = "https://www.toolsqa.com/";
 
 		if (driver.getCurrentUrl().equals(urlpass))
 			return true;
@@ -44,19 +45,33 @@ public class RentCount_PackageVerification extends RentCount_AbstractPage {
 
 	public boolean yahoologindetailsverification() {
 		// TODO Auto-generated method stub
-		LogClass.logveri("---> Verification Start <---");	
+		LogClass.logveri("---> Verification Start <---");
 		RentCount_PackageIndex.extent_report_log.log(LogStatus.INFO, "---> Verification Start <---");
 		WebElement compose = driver.findElement(By.xpath("//a[text()='Compose']"));
-		WebElement username = driver.findElement(By.xpath("//span[text()='vipul']"));	
-		
-		if(compose.isDisplayed()&&username.getText().equals("vipul")) {		
-		RentCount_PackageIndex.extent_report_log.log(LogStatus.INFO, "---> Verification SUCCESSFUL <---");
-		return true;}
-		else {
-			RentCount_PackageIndex.extent_report_log.log(LogStatus.INFO, "---> Verification UNSUCCESSFUL <---");
+		WebElement username = driver.findElement(By.xpath("//span[text()='vipul']"));
+
+		if (compose.isDisplayed() && username.getText().equals("vipul")) {
+			RentCount_PackageIndex.extent_report_log.log(LogStatus.INFO, "---> Verification SUCCESSFUL <---");
+			return true;
+		} else {
+			RentCount_PackageIndex.extent_report_log.log(LogStatus.INFO, "---> Verification UNSUCCESSFUL Check the ScreenShot Please <---");
 			return false;
-			}
+		}
 	}
-	
+
+	public boolean app_form_open_verify() {
+		// TODO Auto-generated method stub
+		funcs.waitforseconds(3);
+		WebElement app_form_text = driver.findElement(By.xpath("//h1[text()='Practice Automation Form']"));
+		LogClass.logveri("---> Verification Start <---");
+		LogClass.logExtent("---> Verification Start <---");
+		if(app_form_text.getText().equals("Practice Automation Form")) {
+			LogClass.logExtent("---> Verification SUCCESSFUL <---");
+			return true;
+		}
+		else {
+			LogClass.logExtent("---> Verification UNSUCCESSFUL Check the ScreenShot Please <---");
+		return false;}
+	}
 	
 }

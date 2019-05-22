@@ -1,123 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
     <line>
       <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong>]]>
     </line>
     <line>
-      <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::yahoomail_login::To verify That user is able to Login with the valid details</h1> </strong>]]>
+      <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::Practice Automation Form</h1> </strong>]]>
     </line>
     <line>
-      <![CDATA[<br><strong><font color="blue">Step1: https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd</font></strong></br>]]>
+      <![CDATA[<br><strong><font color="blue">Step1:Open : https://www.toolsqa.com/</font></strong></br>]]>
     </line>
     <line>
-      <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> YahooMail home page open <-----</h1> </strong>]]>
+      <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Toolsqa home page is open <-----</h1> </strong>]]>
     </line>
     <line>
       <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
     </line>
     <line>
-      <![CDATA[<br><strong><font color="blue">Step2: Enter Login Details</font></strong></br>]]>
+      <![CDATA[<br><strong><font color="blue">Step2: Navigate to Practice Automation Form</font></strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Email Addess : vipul226968 <---</br>]]>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Mouse Hover on Demo_sites_menu <---</br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Automation practice form menu <---</br>]]>
     </line>
     <line>
       <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> ---> Verification Start <---</h1> </strong>]]>
     </line>
     <line>
-      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<hr size='15px' noshade color='green'></br>]]>
+      <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Application form is open <-----</h1> </strong>]]>
     </line>
     <line>
       <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
     </line>
+    <line>
+      <![CDATA[<br><strong><font color="blue">Step3: Filling the Details into Practice Automation Form</font></strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Male <---</br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Female <---</br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> File Uploaded :Downloads/Cloud Hosting Agreement.pdf <---</br>]]>
+    </line>
   </reporter-output>
-  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="102683" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:13:36Z">
+  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="57830" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:47:11Z">
     <groups>
     </groups>
-    <test name="TC_LogIn_02: Verify User LogIn functionality" duration-ms="102683" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:13:36Z">
+    <test name="Practice_Automation_Form:: Simple form with different Functionalities" duration-ms="57830" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:47:11Z">
       <class name="com.automation.index.RentCount_PackageIndex">
-        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="sheetupdate" is-config="true" duration-ms="7" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:11:53Z">
+        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="sheetupdate" is-config="true" duration-ms="7" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:46:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sheetupdate -->
-        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="fetchSuiteConfiguration" is-config="true" duration-ms="6" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:11:53Z">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="fetchSuiteConfiguration" is-config="true" duration-ms="7" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:46:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6f195bc3]]>
+                <![CDATA[org.testng.TestRunner@7a187f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchSuiteConfiguration -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="setUp" is-config="true" duration-ms="6638" started-at="2019-05-15T12:11:53Z" finished-at="2019-05-15T12:12:00Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="setUp" is-config="true" duration-ms="8113" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:46:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automation.index.RentCount_PackageIndex.yahoomail_login() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.automation.index.RentCount_PackageIndex.Practice_Automation_Form()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@6f195bc3]]>
+                <![CDATA[org.testng.TestRunner@7a187f14]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="yahoomail_login()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="yahoomail_login" duration-ms="85160" started-at="2019-05-15T12:12:00Z" finished-at="2019-05-15T12:13:25Z">
+        <test-method status="PASS" signature="Practice_Automation_Form()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="Practice_Automation_Form" duration-ms="36796" started-at="2019-05-22T12:46:21Z" finished-at="2019-05-22T12:46:58Z">
           <reporter-output>
             <line>
               <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong>]]>
             </line>
             <line>
-              <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::yahoomail_login::To verify That user is able to Login with the valid details</h1> </strong>]]>
+              <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::Practice Automation Form</h1> </strong>]]>
             </line>
             <line>
-              <![CDATA[<br><strong><font color="blue">Step1: https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd</font></strong></br>]]>
+              <![CDATA[<br><strong><font color="blue">Step1:Open : https://www.toolsqa.com/</font></strong></br>]]>
             </line>
             <line>
-              <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> YahooMail home page open <-----</h1> </strong>]]>
+              <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Toolsqa home page is open <-----</h1> </strong>]]>
             </line>
             <line>
               <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
             </line>
             <line>
-              <![CDATA[<br><strong><font color="blue">Step2: Enter Login Details</font></strong></br>]]>
+              <![CDATA[<br><strong><font color="blue">Step2: Navigate to Practice Automation Form</font></strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Email Addess : vipul226968 <---</br>]]>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Mouse Hover on Demo_sites_menu <---</br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Automation practice form menu <---</br>]]>
             </line>
             <line>
               <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> ---> Verification Start <---</h1> </strong>]]>
             </line>
             <line>
-              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;<hr size='15px' noshade color='green'></br>]]>
+              <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Application form is open <-----</h1> </strong>]]>
             </line>
             <line>
               <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
             </line>
+            <line>
+              <![CDATA[<br><strong><font color="blue">Step3: Filling the Details into Practice Automation Form</font></strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Male <---</br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Female <---</br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> File Uploaded :Downloads/Cloud Hosting Agreement.pdf <---</br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- yahoomail_login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="tearDown" is-config="true" duration-ms="10866" started-at="2019-05-15T12:13:25Z" finished-at="2019-05-15T12:13:36Z">
+        </test-method> <!-- Practice_Automation_Form -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="tearDown" is-config="true" duration-ms="12897" started-at="2019-05-22T12:46:58Z" finished-at="2019-05-22T12:47:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=yahoomail_login status=SUCCESS method=RentCount_PackageIndex.yahoomail_login()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4] output=<strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong>]]]>
+                <![CDATA[[TestResult name=Practice_Automation_Form status=SUCCESS method=RentCount_PackageIndex.Practice_Automation_Form()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4] output=<strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="zipfileupdate" is-config="true" duration-ms="86" started-at="2019-05-15T12:13:36Z" finished-at="2019-05-15T12:13:37Z">
+        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="zipfileupdate" is-config="true" duration-ms="32" started-at="2019-05-22T12:47:11Z" finished-at="2019-05-22T12:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- zipfileupdate -->
       </class> <!-- com.automation.index.RentCount_PackageIndex -->
-    </test> <!-- TC_LogIn_02: Verify User LogIn functionality -->
+    </test> <!-- Practice_Automation_Form:: Simple form with different Functionalities -->
   </suite> <!-- RentCount_Functional_TestCases_Suite -->
 </testng-results>

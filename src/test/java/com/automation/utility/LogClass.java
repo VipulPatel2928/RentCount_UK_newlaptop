@@ -10,6 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.Augmenter;
 import org.testng.Reporter;
 
+import com.automation.index.RentCount_PackageIndex;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.relevantcodes.extentreports.LogStatus;
+
 public class LogClass {
 
 	// Function for the Test Case
@@ -86,5 +91,11 @@ public class LogClass {
 	public static String getScreenshotLink(String screenshot_name, String link_text) {
 		log("<br><Strong><font color=#FF0000>--Failed</font></strong>");
 		return "<a href='screenshots/" + screenshot_name + "' target='_new'>" + link_text + "</a>";
+	}
+	//function to put log in the extent report
+	
+	public static void logExtent(String msg) {
+		System.out.println(msg);
+	RentCount_PackageIndex.extent_report_log.log(LogStatus.INFO, msg);
 	}
 }

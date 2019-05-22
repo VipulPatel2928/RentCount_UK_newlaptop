@@ -84,7 +84,7 @@ public class RentCount_SeleniumInit extends RentCount_ExtentManager {
 	
 	@BeforeTest(alwaysRun = true)
 	public void fetchSuiteConfiguration(ITestContext testContext) {
-     	testUrl = RentCount_TestData.getURL();
+     	testUrl = RentCount_TestData.getURL();// to get URL 1) you can use the excel sheet or 2) just set the variable with the URL want to use.
 		TestName = testContext.getName();
 		seleniumHub = testContext.getCurrentXmlTest().getParameter("selenium.host");
 		seleniumHubPort = testContext.getCurrentXmlTest().getParameter("selenium.port");
@@ -403,14 +403,14 @@ else if (targetBrowser.contains("browserstack")) {
 	    //C:\Users\User\eclipse-workspace\RentCount_UK\Resources\[3DBroadCastSales]-Script_Result.xlsx
 	    
 	    
-	    String dataFilePath_xlsx = "Resources/[3DBroadCastSales]-Script_Result.xlsx";
+	    /*String dataFilePath_xlsx = "Resources/[3DBroadCastSales]-Script_Result.xlsx";
 		File datafile_xlsx = new File(dataFilePath_xlsx);
 		String INPUT_FILE_xlsx = datafile_xlsx.getAbsolutePath();
 		String dataFilePath_xlsx1 = "RentCount_UK/[3DBroadCastSales]-Script_Result.zip";
 		File datafile_xlsx1 = new File(dataFilePath_xlsx1);
 		String OUTPUT_FILE_xlsx = datafile_xlsx1.getAbsolutePath();
 	    RentCount_Common.zipFile(new File(INPUT_FILE_xlsx), OUTPUT_FILE_xlsx); //This function Zip the single file
-	    
+*/	    
 	    RentCount_Common.zipdirectory();//This function Zip the Directory/Folder
 	}
 
