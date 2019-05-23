@@ -84,14 +84,10 @@ public class RentCount_SeleniumInit extends RentCount_ExtentManager {
 	
 	@BeforeTest(alwaysRun = true)
 	public void fetchSuiteConfiguration(ITestContext testContext) {
-     	//testUrl = RentCount_TestData.getURL();// to get URL 1) you can use the excel sheet or 2) just set the variable with the URL want to use.
+     	
 		TestName = testContext.getName();
-		System.out.println("Test Name :" +TestName);
-		if(TestName.equals("Practice_Automation_Form:: Simple form with different Functionalities"))
-			testUrl="https://www.toolsqa.com/";
-		if(TestName.equals("Yahoomail_login: Verify User LogIn functionality"))
-			testUrl="https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
-			
+		testUrl = RentCount_TestData.getURL(TestName);// to get URL 1) you can use the excel sheet or 2) just set the variable with the URL want to use.
+		System.out.println("Test Name :" +TestName);	
 		seleniumHub = testContext.getCurrentXmlTest().getParameter("selenium.host");
 		seleniumHubPort = testContext.getCurrentXmlTest().getParameter("selenium.port");
 		targetBrowser = testContext.getCurrentXmlTest().getParameter("selenium.browser");
@@ -296,7 +292,7 @@ else if (targetBrowser.contains("browserstack")) {
 		suiteName = testContext.getSuite().getName();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//driver.manage().window().maximize(); //--> Firefox
-		testUrl = RentCount_TestData.getURL();
+		testUrl = RentCount_TestData.getURL(TestName);
 		driver.get(testUrl);
 		packageIndexpage = new RentCount_PackageIndexpage(driver);
 		packageVerification = new RentCount_PackageVerification(driver);

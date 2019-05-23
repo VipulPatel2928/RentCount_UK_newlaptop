@@ -168,12 +168,22 @@ public static void getnumberofrow() {
 	
 	
 	
-	public static String getURL() {
-
+	public static String getURL(String TestName) {
+        String testUrl;
 		System.out.println("Call getURL.......");
 		//return getExcelSheet(0).getRow(0).getCell(1).getStringCellValue();
-		return "https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
+		//return "https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
 		//return "https://www.toolsqa.com/";
+		if(TestName.equals("Practice_Automation_Form:: Simple form with different Functionalities")) {
+			testUrl="https://www.toolsqa.com/";
+			System.out.println("TestURL :"+testUrl);
+			return testUrl;}
+		
+		if(TestName.equals("Yahoomail_login: Verify User LogIn functionality")) {
+			testUrl="https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
+			System.out.println("TestURL :"+testUrl);
+			return testUrl;}
+		return "default";
 		
 	}
 
