@@ -1,19 +1,20 @@
 package com.automation.indexpage;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import com.automation.init.RentCount_AbstractPage;
 import com.automation.utility.LogClass;
 import com.automation.utility.funcs;
 import com.automation.verification.RentCount_PackageVerification;
+import com.sun.corba.se.spi.orbutil.fsm.Action;
 
 public class RentCount_PackageIndexpage extends RentCount_AbstractPage {
 
@@ -126,9 +127,94 @@ public class RentCount_PackageIndexpage extends RentCount_AbstractPage {
         LogClass.log("---> File Uploaded :" +path+" <---");
         LogClass.logExtent("---> File Uploaded :" +path+" <---");
         funcs.waitforseconds(6);
-        funcs.scrollBy_vertical(driver, -1600);
-        funcs.waitforseconds(6);        
 		return new RentCount_PackageVerification(driver);
 	}
 
+	@FindBy(xpath="//select[@id='continents']")private static WebElement continents_selection;
+
+	public static RentCount_PackageVerification continets() {
+		// TODO Auto-generated method stub
+		funcs.waitforseconds(2);
+		funcs.selectFromComboByVisibleText(continents_selection, "Europe");
+		funcs.waitforseconds(3);
+		funcs.selectFromComboByIndex(continents_selection, 0);
+		funcs.waitforseconds(3);		
+		return new RentCount_PackageVerification(driver);
+	}
+	
+	@FindBy(id="selenium_commands")private static WebElement commands;
+	
+	public static RentCount_PackageVerification commands() {
+		// TODO Auto-generated method stub
+		String command[] = {"Wait Commands","Navigation Commands","Wait Commands"};
+		funcs.selectFromComboByVisibleText_multi(driver, commands, command);
+		return new RentCount_PackageVerification(driver);
+	}
+
+	public static RentCount_PackageVerification navi_jqueryui() {
+		// TODO Auto-generated method stub
+		funcs.switchToNewtabWithUrl(driver, "http://jqueryui.com/", 1);
+		return new RentCount_PackageVerification(driver);
+	}
+    
+	@FindBy(xpath="//a[text()='Autocomplete']")private static WebElement autocomplete;
+    @FindBy(xpath="//a[text()='Multiple values']")private static WebElement multiple_values;
+    @FindBy(xpath="//iframe[@class=\"demo-frame\"]")private static WebElement iframe;
+    @FindBy(xpath="//label[text()='Tag programming languages: ']//..//input")private static WebElement text_field_tag;
+    @FindBy(xpath="//div[text()='JavaScript']")private static WebElement java_script;
+    @FindBy(xpath="//div[text()='BASIC']")private static List<WebElement> basic;
+    @FindBy(xpath="//div[text()='PHP']")private static List<WebElement> php;
+    
+    @FindBy(xpath="//a[text()='Scrollable results']")private static WebElement scrollable_result;
+    @FindBy(id="tags")private static WebElement tags;
+    
+    @FindBy(xpath="//*[@id=\"ui-id-1\"]")private static WebElement scroll;
+    @FindBy(xpath="//div[@class=\"ui-menu-item-wrapper\"]")private static List<WebElement> options;
+	public static RentCount_PackageVerification autocomplete() {
+		// TODO Auto-generated method stub
+		funcs.waitforseconds(3);
+		autocomplete.click();
+		funcs.waitforseconds(3);
+		multiple_values.click();
+		System.out.println("---> Click on the multiple values <---");
+		LogClass.log("---> Click on the multiple values <---");
+		LogClass.logExtent("---> Click on the multiple values <---");
+		driver.switchTo().frame(iframe);
+		System.out.println("---> Switch to iframe <---");
+		LogClass.log("---> Switch to iframe <---");
+		LogClass.logExtent("---> Switch to iframe <---");
+		text_field_tag.sendKeys("ja");
+		funcs.waitforseconds(2);
+		java_script.click();
+		System.out.println("---> Select JavaScript <---");
+		LogClass.log("---> Select JavaScript <---");
+		LogClass.logExtent("---> Select JavaScript <---");
+		text_field_tag.sendKeys("basic");
+		funcs.waitforseconds(2);
+		System.out.println("basic :"+basic.size());
+		basic.get(basic.size()-1).click();
+		System.out.println("---> Select Basic <---");
+		LogClass.log("---> Select Basic <---");
+		LogClass.logExtent("---> Select Basic <---");
+		text_field_tag.sendKeys("php");
+		System.out.println("php :"+php.size());
+		funcs.waitforseconds(2);
+		php.get(php.size()-1).click();
+		System.out.println("---> Select PHP <---");
+		LogClass.log("---> Select PHP <---");
+		LogClass.logExtent("---> Select PHP <---");
+		driver.switchTo().defaultContent();
+		
+		scrollable_result.click();
+		driver.switchTo().frame(iframe);
+		tags.sendKeys("a");
+		funcs.waitforseconds(2);
+		Actions act = new Actions(driver);
+		act.moveToElement(scroll).build().perform();
+		for(int i=0;i<options.size();i++) {
+		act.moveToElement(options.get(i)).build().perform();
+		funcs.waitforseconds(4);
+		}
+		return new RentCount_PackageVerification(driver);
+	}
 }

@@ -8,7 +8,7 @@
       <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::Practice Automation Form</h1> </strong>]]>
     </line>
     <line>
-      <![CDATA[<br><strong><font color="blue">Step1:Open : https://www.toolsqa.com/</font></strong></br>]]>
+      <![CDATA[<br><strong><font color="blue">Step 1:Open : https://www.toolsqa.com/</font></strong></br>]]>
     </line>
     <line>
       <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Toolsqa home page is open <-----</h1> </strong>]]>
@@ -17,7 +17,7 @@
       <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
     </line>
     <line>
-      <![CDATA[<br><strong><font color="blue">Step2: Navigate to Practice Automation Form</font></strong></br>]]>
+      <![CDATA[<br><strong><font color="blue">Step 2: Navigate to Practice Automation Form</font></strong></br>]]>
     </line>
     <line>
       <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Mouse Hover on Demo_sites_menu <---</br>]]>
@@ -35,7 +35,7 @@
       <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
     </line>
     <line>
-      <![CDATA[<br><strong><font color="blue">Step3: Filling the Details into Practice Automation Form</font></strong></br>]]>
+      <![CDATA[<br><strong><font color="blue">Step 3: Filling the Details into Practice Automation Form</font></strong></br>]]>
     </line>
     <line>
       <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Male <---</br>]]>
@@ -46,17 +46,50 @@
     <line>
       <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> File Uploaded :Downloads/Cloud Hosting Agreement.pdf <---</br>]]>
     </line>
+    <line>
+      <![CDATA[<br><strong><font color="blue">Step 4: Select Continents</font></strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><strong><font color="blue">Step 5: Select Seleniu Commands</font></strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><strong><font color="blue">Step 6:Open : http://jqueryui.com/</font></strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> jqueryui home page is open <-----</h1> </strong>]]>
+    </line>
+    <line>
+      <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
+    </line>
+    <line>
+      <![CDATA[<br><strong><font color="blue">Step 7:Click on Autocomplete</font></strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the multiple values <---</br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Switch to iframe <---</br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select JavaScript <---</br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select Basic <---</br>]]>
+    </line>
+    <line>
+      <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select PHP <---</br>]]>
+    </line>
   </reporter-output>
-  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="57830" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:47:11Z">
+  <suite name="RentCount_Functional_TestCases_Suite" duration-ms="149055" started-at="2019-05-23T11:32:26Z" finished-at="2019-05-23T11:34:55Z">
     <groups>
     </groups>
-    <test name="Practice_Automation_Form:: Simple form with different Functionalities" duration-ms="57830" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:47:11Z">
+    <test name="Practice_Automation_Form:: Simple form with different Functionalities" duration-ms="149055" started-at="2019-05-23T11:32:26Z" finished-at="2019-05-23T11:34:55Z">
       <class name="com.automation.index.RentCount_PackageIndex">
-        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="sheetupdate" is-config="true" duration-ms="7" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:46:13Z">
+        <test-method status="PASS" signature="sheetupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="sheetupdate" is-config="true" duration-ms="9" started-at="2019-05-23T11:32:26Z" finished-at="2019-05-23T11:32:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sheetupdate -->
-        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="fetchSuiteConfiguration" is-config="true" duration-ms="7" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:46:13Z">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="fetchSuiteConfiguration" is-config="true" duration-ms="10" started-at="2019-05-23T11:32:26Z" finished-at="2019-05-23T11:32:26Z">
           <params>
             <param index="0">
               <value>
@@ -67,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchSuiteConfiguration -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="setUp" is-config="true" duration-ms="8113" started-at="2019-05-22T12:46:13Z" finished-at="2019-05-22T12:46:21Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="setUp" is-config="true" duration-ms="7992" started-at="2019-05-23T11:32:26Z" finished-at="2019-05-23T11:32:34Z">
           <params>
             <param index="0">
               <value>
@@ -83,7 +116,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Practice_Automation_Form()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="Practice_Automation_Form" duration-ms="36796" started-at="2019-05-22T12:46:21Z" finished-at="2019-05-22T12:46:58Z">
+        <test-method status="PASS" signature="Practice_Automation_Form()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="Practice_Automation_Form" duration-ms="130138" started-at="2019-05-23T11:32:34Z" finished-at="2019-05-23T11:34:44Z">
           <reporter-output>
             <line>
               <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong>]]>
@@ -92,7 +125,7 @@
               <![CDATA[<strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::Practice Automation Form</h1> </strong>]]>
             </line>
             <line>
-              <![CDATA[<br><strong><font color="blue">Step1:Open : https://www.toolsqa.com/</font></strong></br>]]>
+              <![CDATA[<br><strong><font color="blue">Step 1:Open : https://www.toolsqa.com/</font></strong></br>]]>
             </line>
             <line>
               <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Toolsqa home page is open <-----</h1> </strong>]]>
@@ -101,7 +134,7 @@
               <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
             </line>
             <line>
-              <![CDATA[<br><strong><font color="blue">Step2: Navigate to Practice Automation Form</font></strong></br>]]>
+              <![CDATA[<br><strong><font color="blue">Step 2: Navigate to Practice Automation Form</font></strong></br>]]>
             </line>
             <line>
               <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Mouse Hover on Demo_sites_menu <---</br>]]>
@@ -119,7 +152,7 @@
               <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
             </line>
             <line>
-              <![CDATA[<br><strong><font color="blue">Step3: Filling the Details into Practice Automation Form</font></strong></br>]]>
+              <![CDATA[<br><strong><font color="blue">Step 3: Filling the Details into Practice Automation Form</font></strong></br>]]>
             </line>
             <line>
               <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Male <---</br>]]>
@@ -130,9 +163,42 @@
             <line>
               <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> File Uploaded :Downloads/Cloud Hosting Agreement.pdf <---</br>]]>
             </line>
+            <line>
+              <![CDATA[<br><strong><font color="blue">Step 4: Select Continents</font></strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[<br><strong><font color="blue">Step 5: Select Seleniu Commands</font></strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[<br><strong><font color="blue">Step 6:Open : http://jqueryui.com/</font></strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[<strong><h1 style="color:saddlebrown;font-size:11px;"> -----> jqueryui home page is open <-----</h1> </strong>]]>
+            </line>
+            <line>
+              <![CDATA[<strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> ]]>
+            </line>
+            <line>
+              <![CDATA[<br><strong><font color="blue">Step 7:Click on Autocomplete</font></strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the multiple values <---</br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Switch to iframe <---</br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select JavaScript <---</br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select Basic <---</br>]]>
+            </line>
+            <line>
+              <![CDATA[</br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select PHP <---</br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Practice_Automation_Form -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="tearDown" is-config="true" duration-ms="12897" started-at="2019-05-22T12:46:58Z" finished-at="2019-05-22T12:47:11Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="tearDown" is-config="true" duration-ms="10888" started-at="2019-05-23T11:34:44Z" finished-at="2019-05-23T11:34:55Z">
           <params>
             <param index="0">
               <value>
@@ -143,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="zipfileupdate" is-config="true" duration-ms="32" started-at="2019-05-22T12:47:11Z" finished-at="2019-05-22T12:47:11Z">
+        <test-method status="PASS" signature="zipfileupdate()[pri:0, instance:com.automation.index.RentCount_PackageIndex@61f8bee4]" name="zipfileupdate" is-config="true" duration-ms="128" started-at="2019-05-23T11:34:56Z" finished-at="2019-05-23T11:34:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- zipfileupdate -->

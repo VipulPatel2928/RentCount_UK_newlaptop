@@ -16,11 +16,13 @@ import java.util.zip.ZipOutputStream;
 
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //This class have the Ready to Use functions which will give you highly re-usability of Code.
@@ -130,6 +132,42 @@ public class funcs {
 			jse.executeScript("window.scrollBy(" + y + ",0)", "");
 			waitforseconds(3);
 		}
+
+	// Select data from dropwon or combobox by Value.
+	public static void selectFromCombo(WebElement element, String value) {
+
+		Select select = new Select(element);
+		select.selectByValue(value);
+	}
+
+	// Select data form dropdown or combobox by visible element
+	public static void selectFromComboByVisibleText(WebElement element, String value) {
+		Select select = new Select(element);
+		select.selectByVisibleText(value);
+
+	}
+
+	// Select data form dropdown or combobox by Index
+	public static String selectFromComboByIndex(WebElement element, int value) {
+
+		Select select = new Select(element);
+		select.selectByIndex(value);
+		return select.getFirstSelectedOption().getText();
+	}
+		
+	// Select data form dropdown or combobox by visible element
+		public static void selectFromComboByVisibleText_multi(WebDriver driver,WebElement element, String[] value) {
+		Actions act = new Actions(driver);
+		Select select = new Select(element);
+		act.keyDown(Keys.CONTROL).build().perform();
+		for (int i = 0; i<value.length; i++) {
+			select.selectByVisibleText(value[i]);
+			waitforseconds(4);
+		}
+		act.keyUp(Keys.CONTROL).build().perform();
+
+		}
+	
 	
 	// Function Write data into Text File
 	/*

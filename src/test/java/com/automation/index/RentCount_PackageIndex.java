@@ -42,7 +42,7 @@ public class RentCount_PackageIndex extends RentCount_SeleniumInit {
 		report_msg = "TEST CASE::yahoomail_login::To verify That user is able to Login with the valid details";
 		LogClass.logcase(report_msg);		
 		extent_report_log.log(LogStatus.INFO, report_msg);
-		report_msg ="Step" + (step++) + ": https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
+		report_msg ="Step " + (step++) + ": https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
 		LogClass.logstep(report_msg);
 		extent_report_log.log(LogStatus.INFO, report_msg);
 		
@@ -57,7 +57,7 @@ public class RentCount_PackageIndex extends RentCount_SeleniumInit {
 			LogClass.AssertFailed();
 			LogClass.makeScreenshot(driver, "yahoomail_loginFailed");
 		}
-		report_msg="Step" + (step++) + ": Enter Login Details";
+		report_msg="Step " + (step++) + ": Enter Login Details";
 		LogClass.logstep(report_msg);
 		extent_report_log.log(LogStatus.INFO, report_msg);
 		packageVerification = RentCount_PackageIndexpage.Yahoomail_login_details();
@@ -91,43 +91,70 @@ public class RentCount_PackageIndex extends RentCount_SeleniumInit {
 		LogClass.logcase(report_msg);		
 		LogClass.logExtent(report_msg);
 		
-		report_msg ="Step" + (step++) + ":Open : https://www.toolsqa.com/";
+		report_msg ="Step " + (step++) + ":Open : https://www.toolsqa.com/";
 		LogClass.logstep(report_msg);
 		LogClass.logExtent(report_msg);		
 		if (packageVerification.homepageverify()) {
 			LogClass.logveri("-----> Toolsqa home page is open <-----");
-			extent_report_log.log(LogStatus.INFO,"-----> Toolsqa home page is open <-----");
+			LogClass.logExtent("-----> Toolsqa home page is open <-----");
 			LogClass.AssertPassed();
 			Assert.assertTrue(true);
 		} else {
 			LogClass.logveri("-----> Toolsqa home page is not open <-----");
-			extent_report_log.log(LogStatus.INFO,"-----> Toolsqa home page is not open <-----");
+			LogClass.logExtent("-----> Toolsqa home page is not open <-----");
 			LogClass.AssertFailed();
 			LogClass.makeScreenshot(driver, "Practice_Automation_Form");
 		}
-		report_msg="Step" + (step++) + ": Navigate to Practice Automation Form";
+		report_msg="Step " + (step++) + ": Navigate to Practice Automation Form";
 		LogClass.logstep(report_msg);
 		LogClass.logExtent(report_msg);
 		packageVerification = RentCount_PackageIndexpage.navi_to_app_form();
 		if (packageVerification.app_form_open_verify()) {
 			LogClass.logveri("-----> Application form is open <-----");
-			extent_report_log.log(LogStatus.INFO,"-----> Application form is open <-----");
+			LogClass.logExtent("-----> Application form is open <-----");
 			LogClass.AssertPassed();
 			Assert.assertTrue(true);
 		} else {
 			LogClass.logveri("-----> Application form is not open <-----");
-			extent_report_log.log(LogStatus.INFO,"-----> Application form is not open <-----");
+			LogClass.logExtent("-----> Application form is not open <-----");
 			LogClass.AssertFailed();
 			LogClass.makeScreenshot(driver, "Practice_Automation_Form");
 		}
-		report_msg="Step" + (step++) + ": Filling the Details into Practice Automation Form";
+		report_msg = "Step " + (step++) + ": Filling the Details into Practice Automation Form";
 		LogClass.logstep(report_msg);
 		LogClass.logExtent(report_msg);
 		packageVerification = RentCount_PackageIndexpage.filling_Details_into_app_form();
 		
+		report_msg = "Step " + (step++) + ": Select Continents";
+		LogClass.logstep(report_msg);
+		LogClass.logExtent(report_msg);
+		packageVerification = RentCount_PackageIndexpage.continets();
 		
+		report_msg = "Step " + (step++) + ": Select Seleniu Commands";
+		LogClass.logstep(report_msg);
+		LogClass.logExtent(report_msg);
+		packageVerification = RentCount_PackageIndexpage.commands();
 		
-		
+		report_msg ="Step " + (step++) + ":Open : http://jqueryui.com/";
+		LogClass.logstep(report_msg);
+		LogClass.logExtent(report_msg);		
+		packageVerification = RentCount_PackageIndexpage.navi_jqueryui();
+		if (packageVerification.jqueryuihomepageverify()) {
+			LogClass.logveri("-----> jqueryui home page is open <-----");
+			LogClass.logExtent("-----> jqueryui home page is open <-----");
+			LogClass.AssertPassed();
+			Assert.assertTrue(true);
+		} else {
+			LogClass.logveri("-----> jqueryui home page is not open <-----");
+			LogClass.logExtent("-----> jqueryui home page is not open <-----");
+			LogClass.AssertFailed();
+			LogClass.makeScreenshot(driver, "Practice_Automation_Form");
+		}
+		report_msg ="Step " + (step++) + ":Click on Autocomplete";
+		LogClass.logstep(report_msg);
+		LogClass.logExtent(report_msg);		
+		packageVerification = RentCount_PackageIndexpage.autocomplete();
+		funcs.waitforseconds(5);
 		
 		
 		

@@ -58,6 +58,15 @@ public class RentCount_PackageVerification extends RentCount_AbstractPage {
 			return false;
 		}
 	}
+	
+public boolean jqueryuihomepageverify() {
+		// TODO Auto-generated method stub
+		String urlpass = "http://jqueryui.com/";
+		if (driver.getCurrentUrl().equals(urlpass))
+			return true;
+		else
+			return false;
+	}
 
 	public boolean app_form_open_verify() {
 		// TODO Auto-generated method stub
@@ -73,5 +82,8 @@ public class RentCount_PackageVerification extends RentCount_AbstractPage {
 			LogClass.logExtent("---> Verification UNSUCCESSFUL Check the ScreenShot Please <---");
 		return false;}
 	}
+
+	
+	
 	
 }
