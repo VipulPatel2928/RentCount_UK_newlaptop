@@ -62,7 +62,7 @@
 	</test>
 
 
-	<!-- <test name="TC_LogIn_02: Verify User LogIn functionality">
+	<test name="Yahoomail_login: Verify User LogIn functionality">
 		<classes>
 			<class name="com.automation.index.RentCount_PackageIndex">
 				<methods>
@@ -70,7 +70,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 	
 	<!-- <test name="TC_Menu_Page_03: Verify Any Menu page Functionalities">
 		<classes>

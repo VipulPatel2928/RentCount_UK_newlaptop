@@ -34,7 +34,7 @@ public class RentCount_PackageIndex extends RentCount_SeleniumInit {
 		System.out.println("Get Test Method called");
 	}
 	
-	@Test
+	@Test(priority=0)
 	public void yahoomail_login(){
 		step = 1;
         String report_msg;//String for the log in the Report
@@ -82,7 +82,7 @@ public class RentCount_PackageIndex extends RentCount_SeleniumInit {
 	}// End of yahoomail_login
 	
 	//This is practice Test Case
-	@Test
+	@Test(priority=1)
 	public void Practice_Automation_Form(){
 		step = 1;
         String report_msg;//String for the log in the Report
