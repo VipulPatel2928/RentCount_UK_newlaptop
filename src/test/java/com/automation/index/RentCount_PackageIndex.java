@@ -46,7 +46,7 @@ public class RentCount_PackageIndex extends RentCount_SeleniumInit {
 		LogClass.logstep(report_msg);
 		extent_report_log.log(LogStatus.INFO, report_msg);
 		
-		if (packageVerification.homepageverify()) {
+		if (packageVerification.homepageverifyyahoo()) {
 			LogClass.logveri("-----> YahooMail home page open <-----");
 			extent_report_log.log(LogStatus.INFO,"-----> YahooMail home page open <-----");
 			LogClass.AssertPassed();
@@ -82,7 +82,8 @@ public class RentCount_PackageIndex extends RentCount_SeleniumInit {
 	}// End of yahoomail_login
 	
 	//This is practice Test Case
-	@Test(priority=1)
+	//@Test (enabled=false)		
+	@Test
 	public void Practice_Automation_Form(){
 		step = 1;
         String report_msg;//String for the log in the Report

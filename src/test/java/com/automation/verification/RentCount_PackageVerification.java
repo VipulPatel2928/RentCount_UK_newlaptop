@@ -43,6 +43,17 @@ public class RentCount_PackageVerification extends RentCount_AbstractPage {
 			return false;
 	}
 
+	public boolean homepageverifyyahoo() {
+		// TODO Auto-generated method stub
+		String urlpass = "https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd";
+
+		if (driver.getCurrentUrl().equals(urlpass))
+			return true;
+		else
+			return false;
+	}
+
+	
 	public boolean yahoologindetailsverification() {
 		// TODO Auto-generated method stub
 		LogClass.logveri("---> Verification Start <---");
@@ -83,6 +94,7 @@ public boolean jqueryuihomepageverify() {
 		return false;}
 	}
 
+	
 	
 	
 	

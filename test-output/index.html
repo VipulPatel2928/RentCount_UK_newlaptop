@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-RentCount_Functional_TestCases_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-RentCount_Functional_TestCases_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RentCount_Functional_TestCases_Suite" title="com.automation.index.RentCount_PackageIndex" hash-for-method="Practice_Automation_Form">Practice_Automation_Form</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-RentCount_Functional_TestCases_Suite" title="com.automation.index.RentCount_PackageIndex" hash-for-method="yahoomail_login">yahoomail_login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-RentCount_Functional_TestCases_Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Practice_Automation_Form">
-                  </a> <!-- Practice_Automation_Form -->
-                  <span class="method-name">Practice_Automation_Form</span>
+                  <a name="yahoomail_login">
+                  </a> <!-- yahoomail_login -->
+                  <span class="method-name">yahoomail_login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,6 +166,15 @@
       &lt;/class&gt; &lt;!-- com.automation.index.RentCount_PackageIndex --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Practice_Automation_Form:: Simple form with different Functionalities --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Yahoomail_login: Verify User LogIn functionality&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automation.index.RentCount_PackageIndex&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;yahoomail_login&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.automation.index.RentCount_PackageIndex --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Yahoomail_login: Verify User LogIn functionality --&gt;
 &lt;/suite&gt; &lt;!-- RentCount_Functional_TestCases_Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -178,6 +187,9 @@
             <ul>
               <li>
                 <span class="test-name">Practice_Automation_Form:: Simple form with different Functionalities (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Yahoomail_login: Verify User LogIn functionality (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,14 +217,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Practice_Automation_Form')
+data.setCell(0, 1, 'yahoomail_login')
 data.setCell(0, 2, 'com.automation.index.RentCount_PackageIndex')
-data.setCell(0, 3, 130138);
+data.setCell(0, 3, 74542);
 window.suiteTableData['RentCount_Functional_TestCases_Suite']= { tableData: data, tableDiv: 'times-div-RentCount_Functional_TestCases_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-RentCount_Functional_TestCases_Suite">
               </div> <!-- times-div-RentCount_Functional_TestCases_Suite -->
             </div> <!-- times-div -->
@@ -224,46 +236,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">Practice_Automation_Form</span>
+              <span class="reporter-method-name">yahoomail_login</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><strong><h1 style="color:DarkViolet;font-size:13px;">  </h1> </strong></span>
-                <span class="reporter-method-output"><strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::Practice Automation Form</h1> </strong></span>
-                <span class="reporter-method-output"><br><strong><font color="blue">Step 1:Open : https://www.toolsqa.com/</font></strong></br></span>
-                <span class="reporter-method-output"><strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Toolsqa home page is open <-----</h1> </strong></span>
+                <span class="reporter-method-output"><strong><h1 style="color:DarkViolet;font-size:13px;"> TEST CASE::yahoomail_login::To verify That user is able to Login with the valid details</h1> </strong></span>
+                <span class="reporter-method-output"><br><strong><font color="blue">Step 1: https://login.yahoo.com/?.src=ym&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fmail.yahoo.com%2Fd</font></strong></br></span>
+                <span class="reporter-method-output"><strong><h1 style="color:saddlebrown;font-size:11px;"> -----> YahooMail home page open <-----</h1> </strong></span>
                 <span class="reporter-method-output"><strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> </span>
-                <span class="reporter-method-output"><br><strong><font color="blue">Step 2: Navigate to Practice Automation Form</font></strong></br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Mouse Hover on Demo_sites_menu <---</br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Automation practice form menu <---</br></span>
+                <span class="reporter-method-output"><br><strong><font color="blue">Step 2: Enter Login Details</font></strong></br></span>
+                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Email Addess : vipul226968 <---</br></span>
                 <span class="reporter-method-output"><strong><h1 style="color:saddlebrown;font-size:11px;"> ---> Verification Start <---</h1> </strong></span>
-                <span class="reporter-method-output"><strong><h1 style="color:saddlebrown;font-size:11px;"> -----> Application form is open <-----</h1> </strong></span>
+                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;<hr size='15px' noshade color='green'></br></span>
                 <span class="reporter-method-output"><strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> </span>
-                <span class="reporter-method-output"><br><strong><font color="blue">Step 3: Filling the Details into Practice Automation Form</font></strong></br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Male <---</br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the Radio button :Female <---</br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> File Uploaded :Downloads/Cloud Hosting Agreement.pdf <---</br></span>
-                <span class="reporter-method-output"><br><strong><font color="blue">Step 4: Select Continents</font></strong></br></span>
-                <span class="reporter-method-output"><br><strong><font color="blue">Step 5: Select Seleniu Commands</font></strong></br></span>
-                <span class="reporter-method-output"><br><strong><font color="blue">Step 6:Open : http://jqueryui.com/</font></strong></br></span>
-                <span class="reporter-method-output"><strong><h1 style="color:saddlebrown;font-size:11px;"> -----> jqueryui home page is open <-----</h1> </strong></span>
-                <span class="reporter-method-output"><strong> <h3 style="color:DarkGreen">  &#10004; <i>  SUCCESSFUL </i></h3> </strong> </span>
-                <span class="reporter-method-output"><br><strong><font color="blue">Step 7:Click on Autocomplete</font></strong></br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Click on the multiple values <---</br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Switch to iframe <---</br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select JavaScript <---</br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select Basic <---</br></span>
-                <span class="reporter-method-output"></br>&nbsp;&nbsp;&nbsp;&nbsp;---> Select PHP <---</br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RentCount_Functional_TestCases_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.automation.index.RentCount_PackageIndex</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">Practice_Automation_Form</span>
+                <br/>
+                <span class="ignored-method-name">Practice_Automation_Form</span>
+                <br/>
                 <span class="ignored-method-name">yahoomail_login</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -282,24 +282,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">fetchSuiteConfiguration(org.testng.TestRunner@7a187f14)</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-name">fetchSuiteConfiguration(org.testng.TestRunner@42f93a98)</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">fetchSuiteConfiguration(org.testng.TestRunner@c46bcd4)</span>
+                <span class="method-start">317 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.automation.index.RentCount_PackageIndex.Practice_Automation_Form(), org.testng.TestR...)</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-name">setUp(public void com.automation.index.RentCount_PackageIndex.yahoomail_login(), org.testng.TestRunner@c46...)</span>
+                <span class="method-start">323 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Practice_Automation_Form</span>
-                <span class="method-start">8040 ms</span>
+                <span class="method-name">yahoomail_login</span>
+                <span class="method-start">6046 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Practice_Automation_Form status=SUCCESS method=RentCount_PackageIndex.Practice_Auto...)</span>
-                <span class="method-start">138182 ms</span>
+                <span class="method-name">tearDown([TestResult name=yahoomail_login status=SUCCESS method=RentCount_PackageIndex.yahoomail_login()[pri:...)</span>
+                <span class="method-start">80589 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">zipfileupdate</span>
-                <span class="method-start">149428 ms</span>
+                <span class="method-start">91525 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
