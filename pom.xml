@@ -126,7 +126,7 @@
 
 			<artifactId>poi</artifactId>
 
-			<version>3.7</version>
+			<version>3.17</version>
 
 		</dependency>
 
@@ -136,7 +136,7 @@
 
 			<artifactId>poi</artifactId>
 
-			<version>3.13</version>
+			<version>3.17</version>
 
 		</dependency>
 
